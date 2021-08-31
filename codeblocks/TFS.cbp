@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TFS" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../tfs" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../tfs" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/usr/include/lua5.2" />
+		</Compiler>
+		<Linker>
+			<Add library="libpugixml" />
+			<Add library="pthread" />
+			<Add library="fmt" />
+			<Add library="lua5.2" />
+			<Add library="mysqlclient" />
+			<Add library="boost_system" />
+			<Add library="boost_thread" />
+			<Add library="boost_iostreams" />
+			<Add library="libcryptopp" />
+			<Add library="boost_filesystem" />
+		</Linker>
+		<Unit filename="../src/account.h" />
+		<Unit filename="../src/actions.cpp" />
+		<Unit filename="../src/actions.h" />
+		<Unit filename="../src/ban.cpp" />
+		<Unit filename="../src/ban.h" />
+		<Unit filename="../src/baseevents.cpp" />
+		<Unit filename="../src/baseevents.h" />
+		<Unit filename="../src/bed.cpp" />
+		<Unit filename="../src/bed.h" />
+		<Unit filename="../src/chat.cpp" />
+		<Unit filename="../src/chat.h" />
+		<Unit filename="../src/combat.cpp" />
+		<Unit filename="../src/combat.h" />
+		<Unit filename="../src/condition.cpp" />
+		<Unit filename="../src/condition.h" />
+		<Unit filename="../src/configmanager.cpp" />
+		<Unit filename="../src/configmanager.h" />
+		<Unit filename="../src/connection.cpp" />
+		<Unit filename="../src/connection.h" />
+		<Unit filename="../src/const.h" />
+		<Unit filename="../src/container.cpp" />
+		<Unit filename="../src/container.h" />
+		<Unit filename="../src/creature.cpp" />
+		<Unit filename="../src/creature.h" />
+		<Unit filename="../src/creatureevent.cpp" />
+		<Unit filename="../src/creatureevent.h" />
+		<Unit filename="../src/cylinder.cpp" />
+		<Unit filename="../src/cylinder.h" />
+		<Unit filename="../src/database.cpp" />
+		<Unit filename="../src/database.h" />
+		<Unit filename="../src/databasemanager.cpp" />
+		<Unit filename="../src/databasemanager.h" />
+		<Unit filename="../src/databasetasks.cpp" />
+		<Unit filename="../src/databasetasks.h" />
+		<Unit filename="../src/definitions.h" />
+		<Unit filename="../src/depotchest.cpp" />
+		<Unit filename="../src/depotchest.h" />
+		<Unit filename="../src/depotlocker.cpp" />
+		<Unit filename="../src/depotlocker.h" />
+		<Unit filename="../src/enums.h" />
+		<Unit filename="../src/events.cpp" />
+		<Unit filename="../src/events.h" />
+		<Unit filename="../src/fileloader.cpp" />
+		<Unit filename="../src/fileloader.h" />
+		<Unit filename="../src/game.cpp" />
+		<Unit filename="../src/game.h" />
+		<Unit filename="../src/globalevent.cpp" />
+		<Unit filename="../src/globalevent.h" />
+		<Unit filename="../src/groups.cpp" />
+		<Unit filename="../src/groups.h" />
+		<Unit filename="../src/guild.cpp" />
+		<Unit filename="../src/guild.h" />
+		<Unit filename="../src/house.cpp" />
+		<Unit filename="../src/house.h" />
+		<Unit filename="../src/housetile.cpp" />
+		<Unit filename="../src/housetile.h" />
+		<Unit filename="../src/inbox.cpp" />
+		<Unit filename="../src/inbox.h" />
+		<Unit filename="../src/ioguild.cpp" />
+		<Unit filename="../src/ioguild.h" />
+		<Unit filename="../src/iologindata.cpp" />
+		<Unit filename="../src/iologindata.h" />
+		<Unit filename="../src/iomap.cpp" />
+		<Unit filename="../src/iomap.h" />
+		<Unit filename="../src/iomapserialize.cpp" />
+		<Unit filename="../src/iomapserialize.h" />
+		<Unit filename="../src/iomarket.cpp" />
+		<Unit filename="../src/iomarket.h" />
+		<Unit filename="../src/item.cpp" />
+		<Unit filename="../src/item.h" />
+		<Unit filename="../src/itemloader.h" />
+		<Unit filename="../src/items.cpp" />
+		<Unit filename="../src/items.h" />
+		<Unit filename="../src/lockfree.h" />
+		<Unit filename="../src/luascript.cpp" />
+		<Unit filename="../src/luascript.h" />
+		<Unit filename="../src/mailbox.cpp" />
+		<Unit filename="../src/mailbox.h" />
+		<Unit filename="../src/map.cpp" />
+		<Unit filename="../src/map.h" />
+		<Unit filename="../src/monster.cpp" />
+		<Unit filename="../src/monster.h" />
+		<Unit filename="../src/monsters.cpp" />
+		<Unit filename="../src/monsters.h" />
+		<Unit filename="../src/mounts.cpp" />
+		<Unit filename="../src/mounts.h" />
+		<Unit filename="../src/movement.cpp" />
+		<Unit filename="../src/movement.h" />
+		<Unit filename="../src/networkmessage.cpp" />
+		<Unit filename="../src/networkmessage.h" />
+		<Unit filename="../src/npc.cpp" />
+		<Unit filename="../src/npc.h" />
+		<Unit filename="../src/otpch.cpp" />
+		<Unit filename="../src/otpch.h" />
+		<Unit filename="../src/otserv.cpp" />
+		<Unit filename="../src/outfit.cpp" />
+		<Unit filename="../src/outfit.h" />
+		<Unit filename="../src/outputmessage.cpp" />
+		<Unit filename="../src/outputmessage.h" />
+		<Unit filename="../src/party.cpp" />
+		<Unit filename="../src/party.h" />
+		<Unit filename="../src/player.cpp" />
+		<Unit filename="../src/player.h" />
+		<Unit filename="../src/position.cpp" />
+		<Unit filename="../src/position.h" />
+		<Unit filename="../src/protocol.cpp" />
+		<Unit filename="../src/protocol.h" />
+		<Unit filename="../src/protocolgame.cpp" />
+		<Unit filename="../src/protocolgame.h" />
+		<Unit filename="../src/protocollogin.cpp" />
+		<Unit filename="../src/protocollogin.h" />
+		<Unit filename="../src/protocolold.cpp" />
+		<Unit filename="../src/protocolold.h" />
+		<Unit filename="../src/protocolstatus.cpp" />
+		<Unit filename="../src/protocolstatus.h" />
+		<Unit filename="../src/pugicast.h" />
+		<Unit filename="../src/quests.cpp" />
+		<Unit filename="../src/quests.h" />
+		<Unit filename="../src/raids.cpp" />
+		<Unit filename="../src/raids.h" />
+		<Unit filename="../src/rsa.cpp" />
+		<Unit filename="../src/rsa.h" />
+		<Unit filename="../src/scheduler.cpp" />
+		<Unit filename="../src/scheduler.h" />
+		<Unit filename="../src/script.cpp" />
+		<Unit filename="../src/script.h" />
+		<Unit filename="../src/scriptmanager.cpp" />
+		<Unit filename="../src/scriptmanager.h" />
+		<Unit filename="../src/server.cpp" />
+		<Unit filename="../src/server.h" />
+		<Unit filename="../src/signals.cpp" />
+		<Unit filename="../src/signals.h" />
+		<Unit filename="../src/spawn.cpp" />
+		<Unit filename="../src/spawn.h" />
+		<Unit filename="../src/spectators.h" />
+		<Unit filename="../src/spells.cpp" />
+		<Unit filename="../src/spells.h" />
+		<Unit filename="../src/storeinbox.cpp" />
+		<Unit filename="../src/storeinbox.h" />
+		<Unit filename="../src/talkaction.cpp" />
+		<Unit filename="../src/talkaction.h" />
+		<Unit filename="../src/tasks.cpp" />
+		<Unit filename="../src/tasks.h" />
+		<Unit filename="../src/teleport.cpp" />
+		<Unit filename="../src/teleport.h" />
+		<Unit filename="../src/thing.cpp" />
+		<Unit filename="../src/thing.h" />
+		<Unit filename="../src/thread_holder_base.h" />
+		<Unit filename="../src/tile.cpp" />
+		<Unit filename="../src/tile.h" />
+		<Unit filename="../src/tools.cpp" />
+		<Unit filename="../src/tools.h" />
+		<Unit filename="../src/town.h" />
+		<Unit filename="../src/trashholder.cpp" />
+		<Unit filename="../src/trashholder.h" />
+		<Unit filename="../src/vocation.cpp" />
+		<Unit filename="../src/vocation.h" />
+		<Unit filename="../src/weapons.cpp" />
+		<Unit filename="../src/weapons.h" />
+		<Unit filename="../src/wildcardtree.cpp" />
+		<Unit filename="../src/wildcardtree.h" />
+		<Unit filename="../src/xtea.cpp" />
+		<Unit filename="../src/xtea.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
